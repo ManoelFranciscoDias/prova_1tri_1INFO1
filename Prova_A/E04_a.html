@@ -8,11 +8,18 @@
     */
 
     //ENTRADA
+    const distancia = Number(prompt(`qual é a distancia de uma viagem?`))
 
 
     //PROCESSAMENTO
+    const litrosNecessarios = distancia / 14;
+    const precoCombustivel = litrosNecessarios * 5.19;
+    const pedagio = Math.ceil(precoCombustivel + 4.90);
+
+
 
 
     //SAÍDA
+    document.write(`o custo total da viagem sera de R$ ${pedagio.toFixed(2).replace(".",",")}.`);
 
 </script>

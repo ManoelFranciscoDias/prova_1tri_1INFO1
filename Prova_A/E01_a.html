@@ -7,11 +7,15 @@
     */
 
     //ENTRADA
-
+const quantidadeSemana = Number(prompt(`quantas gramas de racao o cachorro come por semana?`).trim().replace(",","."));
 
     //PROCESSAMENTO
 
+    const quantidadeFimDeSemana = quantidadeSemana + (quantidadeSemana * 0.15);
+    const calculo = (quantidadeSemana * 5) + (quantidadeFimDeSemana * 2);
+
 
     //SAÍDA
+    document.write(`o peso da racao que e consumida semanalmente é de ${calculo}g`);
 
 </script>

@@ -6,11 +6,18 @@
     */
 
     //ENTRADA
+    const notaPeso1 = Number(prompt(`qual nota voce tirou com peso 1?`).trim().replace(",","."));
+    const notaPeso2 = Number(prompt(`qual nota voce tirou com peso 2?`).trim().replace(",","."));
+    const notaPeso7 = Number(prompt(`qual nota voce tirou com peso 7?`).trim().replace(",","."));
 
 
     //PROCESSAMENTO
+    const calculo = (notaPeso1)+(notaPeso2 * 2)+(notaPeso7 * 7);
+    const calculo2 = (1 + 2 + 7);
+    const calculo3 = calculo / calculo2
 
 
     //SAÍDA
+    document.write(`A media obtida pelo aluno foi de ${calculo3}.`);
 
 </script>

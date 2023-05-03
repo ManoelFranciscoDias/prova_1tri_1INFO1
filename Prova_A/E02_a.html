@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
+    const posto1 = Number(prompt(`qual é o preço do primeiro posto de combustivel?`).trim().replace(",","."));
+    const posto2 = Number(prompt(`qual é o preco do segundo posto de combustivel?`).trim().replace(",","."));
+    const posto3 = Number(prompt(`qual é o preço do terceiro posto de combustivel?`).trim().replace(",","."));
 
 
     //PROCESSAMENTO
+    const calculo = ((posto1 + posto2 + posto3)/3);
 
 
     //SAÍDA
+    document.write(`A media dos precos dos combustiveis é de R$ ${calculo.toFixed(2).replace(".",",")}.`);
 
 </script>

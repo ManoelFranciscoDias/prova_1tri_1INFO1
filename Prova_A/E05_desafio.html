@@ -8,11 +8,18 @@
     */
 
     //ENTRADA
+    const kmPercorridoLitri = Number(prompt(`quantos km a motocicleta consegue percorrer a cada litro de combustivel?`).trim());
+    const kmJaPercorrido = Number(prompt(`qual é a kilometragem ja percorrida?`).trim());
 
 
     //PROCESSAMENTO
+    const combustivel = 5
+    const quantiaLitros = kmJaPercorrido / kmPercorridoLitri;
+    const calculo2 = (quantiaLitros * 5)+(200);
+
+
 
 
     //SAÍDA
-
+document.write(`o custo total da manutençao sera de ${calculo2.toFixed(2).replace(".",",")}.`);
 </script>
